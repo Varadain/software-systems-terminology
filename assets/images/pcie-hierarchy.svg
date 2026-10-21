@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+  <title id="title">A simplified PCIe hierarchy</title><desc id="desc">A Root Complex connects a processor and memory to a PCI Express hierarchy; a switch fans out links to endpoint devices.</desc>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 Z" fill="#243746"/></marker></defs>
+  <rect width="1200" height="520" rx="22" fill="#F6F9FB"/>
+  <text x="56" y="55" font-size="30" font-weight="700" fill="#243746">A simplified PCIe hierarchy</text><text x="58" y="88" font-size="16" fill="#586873">Real systems may have multiple switches, bridges, and integrated endpoints.</text>
+  
+ <rect x="455" y="120" width="290" height="64" rx="15" fill="#AEC4D4" stroke="#243746" stroke-width="2"/>
+ <text x="600" y="148" text-anchor="middle" font-size="20" font-weight="700" fill="#243746"><tspan x="600" dy="0">CPU + memory</tspan></text><text x="600" y="170" text-anchor="middle" font-size="14" font-weight="400" fill="#263238"><tspan x="600" dy="0">host platform</tspan></text>
+ <line x1="600" y1="184" x2="600" y2="211" stroke="#243746" stroke-width="3" marker-end="url(#arrow)"/>
+ <rect x="435" y="211" width="330" height="68" rx="15" fill="#D7E4ED" stroke="#243746" stroke-width="2"/>
+ <text x="600" y="239" text-anchor="middle" font-size="21" font-weight="700" fill="#243746"><tspan x="600" dy="0">Root Complex</tspan></text><text x="600" y="263" text-anchor="middle" font-size="14" font-weight="400" fill="#263238"><tspan x="600" dy="0">connects host to PCIe fabric</tspan></text>
+ <line x1="600" y1="279" x2="600" y2="307" stroke="#243746" stroke-width="3" marker-end="url(#arrow)"/>
+ <rect x="475" y="307" width="250" height="56" rx="14" fill="#E5EDF2" stroke="#243746" stroke-width="2"/>
+ <text x="600" y="341" text-anchor="middle" font-size="19" font-weight="700" fill="#243746"><tspan x="600" dy="0">PCIe switch</tspan></text>
+ <path d="M475 335 H240 V378 M600 363 V378 M725 335 H960 V378" fill="none" stroke="#243746" stroke-width="2.5"/>
+ <line x1="240" y1="378" x2="240" y2="390" stroke="#243746" stroke-width="2" marker-end="url(#arrow)"/>
+ <line x1="600" y1="378" x2="600" y2="390" stroke="#243746" stroke-width="2" marker-end="url(#arrow)"/>
+ <line x1="960" y1="378" x2="960" y2="390" stroke="#243746" stroke-width="2" marker-end="url(#arrow)"/>
+ <rect x="125" y="392" width="230" height="40" rx="12" fill="#DDEFE5"/><text x="240" y="418" text-anchor="middle" font-size="17" font-weight="700" fill="#243746"><tspan x="240" dy="0">Endpoint: NIC</tspan></text>
+ <rect x="485" y="392" width="230" height="40" rx="12" fill="#DDEFE5"/><text x="600" y="418" text-anchor="middle" font-size="17" font-weight="700" fill="#243746"><tspan x="600" dy="0">Endpoint: SSD</tspan></text>
+ <rect x="845" y="392" width="230" height="40" rx="12" fill="#DDEFE5"/><text x="960" y="418" text-anchor="middle" font-size="16" font-weight="700" fill="#243746"><tspan x="960" dy="0">Endpoint: accelerator</tspan></text>
+  <rect x="40" y="438" width="1120" height="54" rx="12" fill="#E5EDF2"/>
+  <text x="60" y="471" font-size="14" font-weight="700" letter-spacing=".6" fill="#243746">KEY IDEA</text>
+  <text x="150" y="471" font-size="16" fill="#263238">An Endpoint sits below the Root Complex in the hierarchy; the terms are not synonyms.</text>
+</svg>

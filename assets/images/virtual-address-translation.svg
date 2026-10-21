@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+  <title id="title">Virtual address translation</title><desc id="desc">A CPU-generated virtual address is checked in the TLB; on a miss, the memory-management hardware walks page tables before accessing physical memory.</desc>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 Z" fill="#243746"/></marker></defs>
+  <rect width="1200" height="520" rx="22" fill="#F6F9FB"/>
+  <text x="56" y="55" font-size="30" font-weight="700" fill="#243746">Virtual address translation</text><text x="58" y="88" font-size="16" fill="#586873">The Translation Lookaside Buffer caches recent address translations.</text>
+  
+ <rect x="40" y="220" width="205" height="110" rx="16" fill="#FFFFFF" stroke="#D7E4ED" stroke-width="2"/>
+ <text x="142" y="256" text-anchor="middle" font-size="22" font-weight="700" fill="#243746"><tspan x="142" dy="0">CPU</tspan></text><text x="142" y="285" text-anchor="middle" font-size="15" font-weight="400" fill="#263238"><tspan x="142" dy="0">virtual address</tspan></text>
+ <line x1="245" y1="275" x2="345" y2="275" stroke="#243746" stroke-width="2.5" marker-end="url(#arrow)"/>
+ <rect x="345" y="205" width="230" height="140" rx="16" fill="#AEC4D4"/>
+ <text x="460" y="250" text-anchor="middle" font-size="20" font-weight="700" fill="#243746"><tspan x="460" dy="0">TLB lookup</tspan></text><text x="460" y="280" text-anchor="middle" font-size="15" font-weight="400" fill="#263238"><tspan x="460" dy="0">translation cache</tspan></text><text x="460" y="308" text-anchor="middle" font-size="15" font-weight="600" fill="#586873"><tspan x="460" dy="0">hit or miss</tspan></text>
+ <line x1="575" y1="242" x2="720" y2="192" stroke="#243746" stroke-width="2" marker-end="url(#arrow)"/>
+ <text x="642" y="202" text-anchor="middle" font-size="13" font-weight="700" fill="#586873"><tspan x="642" dy="0">hit</tspan></text>
+ <rect x="720" y="142" width="205" height="90" rx="14" fill="#DDEFE5" stroke="#D7E4ED" stroke-width="2"/>
+ <text x="822" y="179" text-anchor="middle" font-size="17" font-weight="700" fill="#243746"><tspan x="822" dy="0">Physical address</tspan></text><text x="822" y="205" text-anchor="middle" font-size="14" font-weight="400" fill="#263238"><tspan x="822" dy="0">cached translation</tspan></text>
+ <line x1="925" y1="188" x2="1025" y2="188" stroke="#243746" stroke-width="2" marker-end="url(#arrow)"/>
+ <rect x="1025" y="142" width="145" height="90" rx="14" fill="#FFFFFF" stroke="#D7E4ED" stroke-width="2"/>
+ <text x="1098" y="179" text-anchor="middle" font-size="18" font-weight="700" fill="#243746"><tspan x="1098" dy="0">Memory</tspan></text><text x="1098" y="205" text-anchor="middle" font-size="14" font-weight="400" fill="#263238"><tspan x="1098" dy="0">access</tspan></text>
+ <line x1="460" y1="345" x2="460" y2="395" stroke="#243746" stroke-width="2" marker-end="url(#arrow)"/>
+ <text x="485" y="374" text-anchor="start" font-size="13" font-weight="700" fill="#586873"><tspan x="485" dy="0">miss</tspan></text>
+ <rect x="345" y="395" width="400" height="35" rx="10" fill="#D7E4ED"/>
+ <text x="545" y="419" text-anchor="middle" font-size="15" font-weight="600" fill="#243746"><tspan x="545" dy="0">Page-table walk finds translation</tspan></text>
+ <line x1="745" y1="412" x2="822" y2="240" stroke="#243746" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="40" y="438" width="1120" height="54" rx="12" fill="#E5EDF2"/>
+  <text x="60" y="471" font-size="14" font-weight="700" letter-spacing=".6" fill="#243746">KEY IDEA</text>
+  <text x="150" y="471" font-size="16" fill="#263238">If translation or permissions fail, the CPU may raise a page fault for the OS.</text>
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 190" role="img" aria-labelledby="title desc">
+  <title id="title">A simple client and server request flow</title>
+  <desc id="desc">A client sends a request through an API and network to a server. The server sends a response back to the client.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#243746" />
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="900" height="190" rx="18" fill="#F6F9FB" />
+  <g font-family="Segoe UI, Arial, sans-serif" fill="#243746" text-anchor="middle">
+    <rect x="35" y="62" width="150" height="62" rx="12" fill="#AEC4D4" />
+    <text x="110" y="99" font-size="18" font-weight="600">Client</text>
+    <rect x="245" y="62" width="150" height="62" rx="12" fill="#D7E4ED" />
+    <text x="320" y="99" font-size="18" font-weight="600">API</text>
+    <rect x="455" y="62" width="150" height="62" rx="12" fill="#D7E4ED" />
+    <text x="530" y="99" font-size="18" font-weight="600">Network</text>
+    <rect x="665" y="62" width="190" height="62" rx="12" fill="#AEC4D4" />
+    <text x="760" y="99" font-size="18" font-weight="600">Server</text>
+    <path d="M185 78 H235 M395 78 H445 M605 78 H655" stroke="#243746" stroke-width="3" marker-end="url(#arrow)" />
+    <path d="M665 108 H615 M455 108 H405 M245 108 H195" stroke="#586873" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#arrow)" />
+    <text x="425" y="54" font-size="13">request</text>
+    <text x="425" y="151" font-size="13" fill="#586873">response</text>
+  </g>
+</svg>

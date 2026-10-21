@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+  <title id="title">SystemVerilog interface and modports</title>
+  <desc id="desc">An interface groups valid, ready, and data signals. Producer and consumer modports give each connected component a directional view of those signals.</desc>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 Z" fill="#243746"/></marker></defs>
+  <rect width="1200" height="520" rx="22" fill="#F6F9FB"/>
+  <text x="56" y="55" font-size="30" font-weight="700" fill="#243746">SystemVerilog interface and modports</text>
+  <text x="58" y="88" font-size="16" fill="#586873">An interface groups signals; modports describe each component's direction.</text>
+  <rect x="55" y="160" width="280" height="230" rx="16" fill="#FFFFFF" stroke="#D7E4ED" stroke-width="2"/>
+  <path d="M71 160 H319 Q335 160 335 176 V205 H55 V176 Q55 160 71 160" fill="#AEC4D4"/>
+  <text x="195" y="190" text-anchor="middle" font-size="21" font-weight="700" fill="#243746">Producer</text>
+  <text x="80" y="242" font-size="15" font-weight="700" fill="#243746">modport source</text>
+  <text x="80" y="280" font-size="15" fill="#263238">output valid, data</text>
+  <text x="80" y="326" font-size="15" fill="#263238">input ready</text>
+  <rect x="430" y="140" width="340" height="270" rx="16" fill="#FFFFFF" stroke="#AEC4D4" stroke-width="3"/>
+  <path d="M446 140 H754 Q770 140 770 156 V188 H430 V156 Q430 140 446 140" fill="#D7E4ED"/>
+  <text x="600" y="174" text-anchor="middle" font-size="21" font-weight="700" fill="#243746">interface bus_if</text>
+  <text x="475" y="235" font-size="16" fill="#263238">logic valid</text>
+  <text x="475" y="280" font-size="16" fill="#263238">logic [31:0] data</text>
+  <text x="475" y="325" font-size="16" fill="#263238">logic ready</text>
+  <text x="475" y="375" font-size="14" fill="#586873">one shared signal declaration</text>
+  <rect x="865" y="160" width="280" height="230" rx="16" fill="#FFFFFF" stroke="#D7E4ED" stroke-width="2"/>
+  <path d="M881 160 H1129 Q1145 160 1145 176 V205 H865 V176 Q865 160 881 160" fill="#DDEFE5"/>
+  <text x="1005" y="190" text-anchor="middle" font-size="21" font-weight="700" fill="#243746">Consumer</text>
+  <text x="890" y="242" font-size="15" font-weight="700" fill="#243746">modport sink</text>
+  <text x="890" y="280" font-size="15" fill="#263238">input valid, data</text>
+  <text x="890" y="326" font-size="15" fill="#263238">output ready</text>
+  <line x1="335" y1="226" x2="430" y2="226" stroke="#243746" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="770" y1="226" x2="865" y2="226" stroke="#243746" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <text x="382" y="215" text-anchor="middle" font-size="12" fill="#586873">valid/data</text>
+  <text x="817" y="215" text-anchor="middle" font-size="12" fill="#586873">valid/data</text>
+  <line x1="865" y1="348" x2="770" y2="348" stroke="#243746" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="430" y1="348" x2="335" y2="348" stroke="#243746" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <text x="817" y="338" text-anchor="middle" font-size="12" fill="#586873">ready</text>
+  <text x="382" y="338" text-anchor="middle" font-size="12" fill="#586873">ready</text>
+  <rect x="40" y="438" width="1120" height="54" rx="12" fill="#E5EDF2"/>
+  <text x="60" y="471" font-size="14" font-weight="700" letter-spacing=".6" fill="#243746">KEY IDEA</text>
+  <text x="150" y="471" font-size="16" fill="#263238">Modports make signal direction explicit at the connection.</text>
+</svg>
