@@ -18,7 +18,7 @@ No automated test framework or coverage requirement is configured. Review change
 
 ## Commits and Pull Requests
 
-Git history is not available here, so no existing commit convention can be confirmed. Use short, imperative commit subjects (for example, `Add API and ABI comparison`). Pull requests should describe the learning sections changed, note accuracy and link checks, and include screenshots when visual assets or rendered layouts change. Link related issues when applicable.
+Use short, imperative commit subjects that describe the change (for example, `Add API and ABI comparison`). Pull requests should describe the learning sections changed, note accuracy and link checks, and include screenshots when visual assets or rendered layouts change. Link related issues when applicable.
 
 ## Security and Publishing
 
